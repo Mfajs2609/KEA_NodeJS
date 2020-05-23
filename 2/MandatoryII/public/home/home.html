@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <form action="/logout" method="POST" name="logout">
+        <input type="submit" value="logout" id="logout">
+    </form>
+    <br>
+    <div>
+        <h1>Welcome to the Homepage</h1>
+        <li>
+            <p>Signed in as: </p>
+            <p id="username"></p>
+        </li>
+    </div>
+    
+    <br>
+    <div>
+        <p>This is my secret button</p>
+        <form action="/secret" method="GET" name="secret">
+            <input type="submit" value="secret" id="secret">
+        </form>
+        <br>
+        <p>Password reset button</p>
+        <form action="/reset" method="GET" name="reset">
+            <input type="submit" value="reset" id="reset">
+        </form>
+    </div>
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="./home.js"></script>
+</body>
+</html>
